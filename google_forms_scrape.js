@@ -6,11 +6,13 @@ const parseGoogleFormHtml = html => {
 
   const details = util.getFormDetails($gForm);
   const inputs = util.getTextInputs($gForm);
+  const textAreas = util.getTextAreas($gForm);
   const radioGroups = util.getRadioGroups($gForm);
 
   return ({
     details,
     inputs,
+    textAreas,
     radioGroups,
   })
 }
